@@ -1,20 +1,24 @@
-﻿using Business.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
 using Core.Utilities.Results;
+using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFrameWork;
 using DataAccess.Concrete.InMemory;
 
 namespace ConsoleUI
 {
+
     internal class Program
     {
         static void Main(string[] args)
         {
-
+            
             //CategoryTest();
             ProductTest();
 
 
         }
+        
 
         private static void CategoryTest()
         {
